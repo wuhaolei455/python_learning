@@ -1,5 +1,6 @@
 # yield.py https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python
 # use yield to create a generator
+# generator is an iterator
 def simple_generator_example():
     def simple_generator():
         yield 1
