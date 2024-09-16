@@ -2,7 +2,6 @@ class Animal:
     # 类属性
     kingdom = "nanle"
 
-
     def __init__(self, name, age):
         # 私有实例属性
         self.__name = name
@@ -14,8 +13,8 @@ class Animal:
 
     # 类方法, has access to class attributes
     @classmethod
-    def kingdom_info(cls):
-        return f"All animals belong to the kingdom {cls.kingdom}"
+    def toString(cls):
+        return f"This is {cls.__name__}"
 
     # 静态方法, no argument for class or instance
     @staticmethod
@@ -60,7 +59,8 @@ dog = Dog("Buddy", 3)
 cat = Cat("Whiskers", 2)
 
 # 访问类方法和类属性
-print(Animal.kingdom_info())
+print(cat.toString())
+print(Dog.toString())
 print(f"Kingdom: {Dog.kingdom}")
 
 # 访问实例方法和属性
