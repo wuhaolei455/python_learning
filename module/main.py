@@ -1,6 +1,6 @@
-from sys import *
-import example.packages.no_main as no_main
+# from packages import *
+import packages
 
-print(version)
-print(path)
-print(no_main.vip_lv_name(1))
+# print(lib.vip_lv_name(1))
+# print(no_main.vip_lv_name(1))
+print(packages.__version__)
